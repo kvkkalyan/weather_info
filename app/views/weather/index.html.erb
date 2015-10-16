@@ -1,0 +1,12 @@
+<h1>weather Report</h1>
+
+<%= form_tag ('weather/info') do%>
+	<%= label_tag 'City' %>
+	<%= text_field_tag 'city_name' %>
+	<%= submit_tag 'Get Data'%>
+<%end%>
+<p>To know contact information click here</p>
+<%= link_to 'Contact', contact_info_index_path%>
+<p>To visit home page click here</p>
+<%= link_to 'home',home_index_path %>
+
